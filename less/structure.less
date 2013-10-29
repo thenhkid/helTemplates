@@ -1,0 +1,501 @@
+html, body {
+	
+}
+
+.contain {
+	max-width: 1170px;
+	margin:auto;
+	box-sizing:border-box;
+	padding: 0 15px;
+}
+
+.wrap {
+	position:relative;
+
+}
+
+.main {
+	margin-left:160px;
+
+	// fixes issue with floated sidebar.
+	// not sure what the cause is 
+	.panel-body:before, .panel-body:after {
+		content:none;
+	}
+}
+
+.form-group .half {
+	width:50%
+}
+
+.table {
+	th {
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+}
+
+.scrollable {
+	overflow: auto;
+}
+
+.modal {
+	overflow: auto;
+}
+
+.logo {
+	width:125px;
+	height:30px;
+	display: block;
+}
+
+
+
+// forms
+.form-control + .form-group-note {
+	margin-top:5px;
+	display: block;
+}
+
+.form-control-disabled {
+	opacity:.5
+}
+
+.form-sub-heading {
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+
+// panels
+.panel {
+	.form-sub-heading {
+		margin-top:30px;
+		margin-bottom: 30px;
+		margin-left:-10px;
+		margin-right:-10px;
+		padding-left:10px;
+	}
+
+	.tab-content {
+		padding:15px;
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+
+	&.panel-has-nav {
+		.panel-body {
+			padding:10px;
+			padding-bottom:0;
+			overflow: hidden;
+		}
+	}
+
+	.panel-nav {
+		> li {
+			a:hover {
+				padding-bottom:9px;
+			}
+
+			&.active a:hover{
+				padding-bottom:10px;
+			}
+		}
+	}
+}
+
+
+// sub nav
+.main .sub-nav {
+	overflow:hidden;
+	.nav:after {
+		clear:none;
+	}
+}
+
+.sub-nav {
+	margin: 0px 0 20px 0;
+	width:100%;
+
+	.nav-pills a {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		font-size: @font-size-medium;
+	}
+
+	.nav-pills a > .badge {
+		font-size: @font-size-large;
+		font-weight: bold;
+		border-radius: 25px;
+		margin-left: 0;
+		margin-right: 5px;
+		padding-bottom: 4px;
+	}
+
+}
+
+
+.navbar {
+	min-height: 0;
+}
+
+.nav-inline {
+	margin: 0;
+	padding:20px 0;
+	li {
+		display:inline-block;
+		a {
+			padding:0;
+			margin-right:20px;
+		}
+	}
+}
+
+// Module
+.module {
+
+	&.sidebar-module {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom:1px solid @light-border-color;
+
+		&:last-child {
+			border-bottom:0;
+			margin-bottom:0;
+		}
+	}
+
+
+}
+
+// Primary Nav
+.primary-nav {
+	margin-bottom:0;
+	border-radius: 0;
+	padding:15px 0;
+
+	// not sure why bootstrap sets these values to -15px by default
+	.container {
+		.navbar-header, .navbar-brand{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.navbar-nav {
+		li {
+			margin-right: 5px;
+		}
+
+		li > a {
+			padding:10px 15px;
+			.border-radius(5px)
+		}
+
+		margin-top:2px; //adjustment to center nav
+
+	}
+
+	.navbar-brand {
+		padding:0;
+	}
+
+	.logo {
+		margin-top:0;
+		position:static;
+	}
+
+	.navbar-toggle {
+		margin-right:0;
+	}
+
+	li.open a{
+		border-bottom-left-radius:0;
+		border-bottom-right-radius:0;
+	}
+
+}
+
+
+// secondary, stacked nav
+.secondary-nav {
+
+	li > a {
+		font-size: 14px;
+		padding:5px 0;
+	}
+
+	li > ul {
+		margin-bottom:15px;
+	}
+
+	li + li {
+		margin-top: 0;
+	}
+
+	li li a{
+		padding: 5px 0 5px 15px;
+		font-size: @font-size-small;
+	}
+
+	.indicator-active {
+		position: absolute;
+		right:-2px;
+		top:50%;
+		margin-top:-10px;
+	}
+}
+
+
+// info listing styles
+.info-list {
+	margin:0;
+}
+
+.info-list dd{
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// content call out area
+.content-call-out {
+	padding:30px 0 30px 0;
+}
+
+
+
+// Action bar
+.section-title {
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.actions-nav{
+	// TODO[Implement] : Figure out a way to make this less static
+	.navbar-brand{
+		padding-top:21px;
+		padding-bottom:22px;
+	}
+	margin-bottom:20px;
+}
+
+.icon-stacked {
+	display:block;
+	text-align:center;
+	margin:0;
+	font-size:18px;
+	margin-bottom:5px;
+	margin-right:0;
+
+	&.glyphicon {
+		width:auto;
+	}
+
+	&.custom-icon {
+		margin-left:auto;
+		margin-right:auto;
+		width:18px;
+	}
+}
+
+.custom-icon {
+	width:18px;
+	height:18px;
+}
+
+.navbar-actions {
+	&.navbar-nav{
+		li > a {
+			padding-top:10px;
+			padding-bottom:10px;
+			text-align:center;
+		}
+	}
+}
+
+
+// icons, graphics
+.arrow-left{
+	width:10px;
+	height: 20px;
+	display:block;
+}
+
+.arrow-up{
+	width:20px;
+	height: 10px;
+	display:block;
+}
+
+
+.footer {
+	/*
+	position: absolute;
+	bottom:0;
+	padding:10px 20px;
+	display: block;
+	width:100%;*/
+	font-size: @font-size-small;
+
+	p {
+		margin-bottom: 0;
+		padding-bottom: 5px;
+	}
+
+	padding-bottom: 10px;
+}
+
+// page content
+.main-container{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+
+.page-content {
+	h2:first-child {
+		margin-top:0;
+	}
+}
+
+// email list
+.email-list-signup {
+	padding:20px 0;
+
+	.form-inline > * {
+		margin-right: 10px;
+	}
+}
+
+// Content pages
+.page-title {
+	font-size: 36px;
+	font-weight: bold;
+	padding:30px 0;
+	margin:0
+}
+
+// social icons
+.icon-social {
+	width:35px;
+	height:34px;
+	display:inline-block;
+}
+
+//affix
+.secondary {
+
+	.affix {
+		position: fixed;
+		top:20px;
+		box-sizing: border-box;
+	}
+
+	.affix-bottom {
+		position: absolute;
+		box-sizing: border-box;
+	}
+
+
+	@media (max-width: @screen-xs-max) {
+
+		.affix {
+			position: static;
+			background-color: #fff;
+			top:auto;
+			padding-top:0px;
+		}
+
+		.affix-bottom {
+			position: absolute;
+		}
+
+	}
+
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		.affix, .affix-bottom {
+			width:188px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+		.affix, .affix-bottom {
+			width:213px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		// largest screen
+		.affix, .affix-bottom {
+			width:263px;
+		}
+	}
+
+}
+
+
+// Helpers
+
+.margin-small {
+	margin:5px;
+	&.top {
+		margin:5px 0 0 0;
+	}
+}
+
+.font-large {
+	font-size: @font-size-large;
+}
+
+.filler:after{
+	background-color:inherit;
+	bottom: 0;
+	content: "";
+	height: auto;
+	min-height: 100%;
+	left: 0;
+	margin:inherit;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: inherit;
+	z-index: -1;  
+}
+
+.ir {
+	display:block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ir-inline {
+	display:inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.loginContainer{
+	width:300px;
+	margin:auto;
+	height: 300px;
+	position: absolute;
+	top:50%;
+	margin-top:-150px;
+	left:50%;
+	margin-left:-150px;
+}
+
+.login {
+	padding:20px;
+}
+
+.center-text {
+	text-align: center;
+}
