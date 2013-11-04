@@ -69,6 +69,62 @@ html, body {
 	font-size: 14px;
 }
 
+.form-accordion {
+	.panel {
+		margin-bottom:15px;
+		border:0;
+	}
+}
+
+.panel-form {
+	.panel-heading {
+		border-bottom: 0;
+		label, h3{
+			white-space: nowrap;
+			width:100px;
+			text-overflow: ellipsis;
+			margin-bottom: 0;
+			margin:0;
+		}
+
+		h3 {
+			width:auto;
+		}
+
+		+ .panel-collapse {
+			.panel-body {
+			}
+		}
+		.form-control
+		{
+			display:inline-block;
+			width:auto;
+		}
+	}
+}
+
+.form-section {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #e3e3e3;
+}
+
+.form-title {
+	font-size: @font-size-large;
+	margin-bottom:20px;
+}
+
+.form {
+	label {
+		font-weight: normal;
+	}
+}
+
+// breadcrumb
+.breadcrumb {
+	padding:0;
+	background-color: transparent;
+}
 
 // panels
 .panel {
@@ -168,8 +224,6 @@ html, body {
 			margin-bottom:0;
 		}
 	}
-
-
 }
 
 // Primary Nav
@@ -284,6 +338,18 @@ html, body {
 		padding-bottom:22px;
 	}
 	margin-bottom:20px;
+
+	.indicator-active {
+		position: absolute;
+		bottom:-2px;
+		margin-left:-10px;
+		left:50%;
+		display:none;
+	}
+
+	li.active .indicator-active {
+		display:block;
+	}
 }
 
 .icon-stacked {
@@ -313,9 +379,8 @@ html, body {
 .navbar-actions {
 	&.navbar-nav{
 		li > a {
-			padding-top:10px;
-			padding-bottom:10px;
-			text-align:center;
+			padding-top:15px;
+			padding-bottom:15px;
 		}
 	}
 }
@@ -354,8 +419,13 @@ html, body {
 
 // page content
 .main-container{
-	padding-top:30px;
 	padding-bottom:30px;
+}
+
+.home {
+	.main-container {
+		padding-top:30px;
+	}
 }
 
 
@@ -380,6 +450,15 @@ html, body {
 	font-weight: bold;
 	padding:30px 0;
 	margin:0
+}
+
+.page-title-icon {
+	width:51px;
+	height:49px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:15px;
+	margin-top:-3px;
 }
 
 // social icons
@@ -447,6 +526,12 @@ html, body {
 	margin:5px;
 	&.top {
 		margin:5px 0 0 0;
+	}
+}
+
+.margin-medium {
+	&.top {
+		margin-top:8px;
 	}
 }
 

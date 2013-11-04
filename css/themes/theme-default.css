@@ -22,6 +22,65 @@ h3 {
 .form-sub-heading {
   border-bottom: 1px solid #dddddd;
 }
+.page-content .form-section-heading {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.panel-form {
+  border-bottom: 0;
+  box-shadow: none;
+}
+.panel-form .panel-body {
+  border-bottom: 0;
+}
+.panel-form .panel-heading {
+  background: #f1f1f1;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #ffffff));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #f1f1f1 0%, #ffffff 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+
+  border-bottom: 0;
+}
+.panel-form .panel-heading label,
+.panel-form .panel-heading h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+}
+.panel-form .panel-heading h3 {
+  cursor: pointer;
+}
+.panel-form .panel-heading h3.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+.panel-form .panel-heading + .panel-collapse .panel-body {
+  border-top: 0;
+}
+.panel-form .panel-heading .form-control {
+  display: inline-block;
+  width: auto;
+}
 .btn-secondary {
   background-color: #6c6c6c;
   color: #ffffff;
@@ -183,21 +242,33 @@ h3 {
   color: #ffffff;
 }
 .actions-nav {
-  border-bottom: 0;
-  border-top: 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #efefef;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: 0 5px 10px 0 #efefef;
-  box-shadow: 0 5px 10px 0 #efefef;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.actions-nav .navbar-nav > li > a {
-  color: #0096ff;
+.actions-nav .navbar-nav li > a,
+.actions-nav .navbar-nav li > a:hover {
+  color: #efefef;
 }
-.actions-nav .navbar-nav > li > a:hover {
-  color: #0078cc;
+.actions-nav .navbar-nav li.active > a {
+  background-color: transparent;
+  color: #ffffff;
+}
+.actions-nav .navbar-nav li.active > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+.actions-nav .navbar-nav li > a {
+  border-right: 0px solid rgba(0, 0, 0, 0.3);
+  border-left: 0px solid rgba(26, 26, 26, 0.3);
+}
+.actions-nav .navbar-nav li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.actions-nav .navbar-nav li:first-child > a {
+  border-left: 0;
+}
+.actions-nav .navbar-nav li:last-child > a {
+  border-right: 0;
 }
 .section-title {
   font-weight: bold;
@@ -223,6 +294,8 @@ h3 {
 }
 .footer {
   color: #666666;
+  border-top: 1px solid #cccccc;
+  border-collapse: collapse;
 }
 .icon-cancel {
   background-image: url('../../img/sp-common.png');
@@ -241,7 +314,6 @@ h3 {
 }
 .email-list-signup {
   background-color: #efefef;
-  border-bottom: 1px solid #cccccc;
   border-top: 1px solid #cccccc;
   border-collapse: collapse;
 }

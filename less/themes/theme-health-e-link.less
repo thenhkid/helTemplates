@@ -15,7 +15,6 @@
 @brand-secondary:       #003366;
 
 
-
 // mixins
 .sprite-health-e-link(@left:0; @top:0;) {
 	background-image: url('../../img/health-e-link/sp-health-e-link.png');
@@ -188,6 +187,10 @@
 
 }
 
+// page title
+.page-title-icon {
+	.sprite-health-e-link(0, -220px);
+}
 
 // product suite
 .product-suite {
@@ -397,4 +400,30 @@
 		}
 	}
 
+
+
+	.actions-nav {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#30000000',endColorstr='#30000000');
+		zoom: 1;
+
+		.navbar-nav {
+			li {
+				&.active > a {
+					background-color: transparent;
+
+					&:hover {
+						background-color: transparent;
+					}
+				}
+
+				> a {
+					&:hover {
+						background:transparent;
+						filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#30000000',endColorstr='#30000000');
+					};
+				}
+			}
+		}
+	}
 }
