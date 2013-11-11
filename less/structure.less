@@ -44,6 +44,49 @@ html, body {
 	overflow: auto;
 }
 
+// media modal
+.modal-media{
+
+	&.image-modal {
+		.modal-dialog {
+			min-width:0;
+			box-sizing:content-box;
+		}
+		.modal-body {
+			padding:20px;
+			box-sizing:content-box;
+		}
+
+		.modal-image {
+			margin:auto;
+			display: block;
+		}
+
+		.modal-iframe {
+			width:100%;
+			height:100%;
+			display:block;
+		}
+	}
+
+	&.pdf-modal {
+
+		.modal-content {
+			position:relative;
+			max-height: 100%;
+			height: 100%;
+		}
+		.modal-body {
+			box-sizing:border-box;
+		}
+
+		.modal-dialog {
+			width:90%;
+			height:100%;
+		}
+	}
+}
+
 .logo {
 	width:125px;
 	height:30px;
@@ -337,7 +380,8 @@ html, body {
 		padding-top:21px;
 		padding-bottom:22px;
 	}
-	margin-bottom:20px;
+
+	margin-bottom:0px;
 
 	.indicator-active {
 		position: absolute;
@@ -420,6 +464,7 @@ html, body {
 // page content
 .main-container{
 	padding-bottom:30px;
+	padding-top:30px;
 }
 
 .home {
@@ -430,10 +475,16 @@ html, body {
 
 
 .page-content {
-	h2:first-child {
+	h2:first-of-type, h3:first-of-type {
 		margin-top:0;
 	}
 }
+
+.content-inset {
+	width:200px;
+	margin:20px;
+}
+
 
 // email list
 .email-list-signup {
@@ -443,6 +494,14 @@ html, body {
 		margin-right: 10px;
 	}
 }
+
+.media-list {
+	li {
+		padding-bottom:20px;
+		margin-bottom:20px;
+	}
+}
+
 
 // Content pages
 .page-title {
@@ -519,9 +578,13 @@ html, body {
 
 }
 
+// buttons 
+.btn-action {
+	padding:10px 30px;
+}
+
 
 // Helpers
-
 .margin-small {
 	margin:5px;
 	&.top {

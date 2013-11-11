@@ -27,9 +27,13 @@ h3 {
   font-size: 14px;
   font-weight: bold;
 }
+.media-list li {
+  border-bottom: 1px solid #cccccc;
+}
 .panel-form {
   border-bottom: 0;
   box-shadow: none;
+  border: 0;
 }
 .panel-form .panel-body {
   border-bottom: 0;
@@ -165,6 +169,7 @@ h3 {
   color: #666666;
   font-weight: bold;
   background-color: transparent;
+  background-image: none;
 }
 .secondary-nav .nav > li > a:hover {
   background-color: transparent;
@@ -175,10 +180,12 @@ h3 {
   font-weight: normal;
   border-bottom: 0;
 }
-.secondary-nav .nav li.active a {
+.secondary-nav .nav > li.active > a {
   background-color: transparent;
   color: #000000;
   font-weight: bold;
+}
+.secondary-nav .nav .nav li.active > a {
   background-image: url('../../img/sp-common.png');
   background-repeat: no-repeat;
   background-position: -100px 7px;
@@ -270,6 +277,19 @@ h3 {
 .actions-nav .navbar-nav li:last-child > a {
   border-right: 0;
 }
+.modal-media.video-modal .modal-content {
+  background-color: #000;
+}
+.modal-media.video-modal .modal-header {
+  border-bottom: 0;
+  border-bottom: 1px solid #222;
+}
+.modal-media.video-modal .modal-header h3 {
+  color: #666;
+}
+.modal-media.video-modal .modal-header .close {
+  color: #fff;
+}
 .section-title {
   font-weight: bold;
 }
@@ -318,14 +338,21 @@ h3 {
   border-collapse: collapse;
 }
 .content-call-out {
-  border-width: 1px 0 1px 0;
+  border-width: 1px 0 0px 0;
   border-style: solid;
   border-color: #cccccc;
+  border-collapse: collapse;
 }
 .content-call-out p {
   font-size: 16px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
+}
+.content-inset {
+  width: 200px;
+  margin: 20px;
+  border-width: 1px 0 1px 0;
+  border-bottom: 1px solid #cccccc;
 }
 .icon-social {
   background-image: url('../../img/sp-common.png');
@@ -495,34 +522,18 @@ body#login {
   background-color: #1b2e3e;
   color: #709dc3;
 }
+.product-suite h2,
 .product-suite h3,
 .product-suite h3 a {
   color: #ffffff;
+}
+.product-suite h3,
+.product-suite h3 a {
   font-size: 18px;
 }
 .product-suite .product-summary {
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.product-suite .icon-product {
-  width: 112px;
-  height: 112px;
-  display: block;
-  background-image: url('../../img/health-e-link/sp-health-e-link.png');
-  background-repeat: no-repeat;
-  background-position: 0 -100px;
-  margin: auto;
-}
-.product-suite .icon-health-e-data {
-  background-image: url('../../img/health-e-link/sp-health-e-link.png');
-  background-repeat: no-repeat;
-  background-position: -120px -100px;
-}
-.product-suite .icon-health-e-web {
-  background-image: url('../../img/health-e-link/sp-health-e-link.png');
-  background-repeat: no-repeat;
-  background-position: -240px -100px;
 }
 .product-suite .btn-secondary {
   background-color: #193c57;
@@ -533,6 +544,33 @@ body#login {
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #95c0e5;
+}
+.product-suite .icon-product {
+  margin-right: 20px;
+}
+.home .product-suite .icon-product {
+  margin: auto;
+}
+.home .product-suite .product-summary {
+  text-align: center;
+}
+.icon-product {
+  width: 112px;
+  height: 112px;
+  display: block;
+  background-image: url('../../img/health-e-link/sp-health-e-link.png');
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+}
+.icon-health-e-data {
+  background-image: url('../../img/health-e-link/sp-health-e-link.png');
+  background-repeat: no-repeat;
+  background-position: -120px -100px;
+}
+.icon-health-e-web {
+  background-image: url('../../img/health-e-link/sp-health-e-link.png');
+  background-repeat: no-repeat;
+  background-position: -240px -100px;
 }
 .icon-play {
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
@@ -576,7 +614,6 @@ body#login {
 }
 .btn-action {
   text-transform: uppercase;
-  padding: 15px 40px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -741,8 +778,8 @@ body#login {
 .primary-nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.primary-nav .navbar-nav li.active > a,
-.primary-nav .navbar-nav li.active > a:hover {
+.primary-nav .navbar-nav > .active > a,
+.primary-nav .navbar-nav > li.active > a:hover {
   color: #4d4d4d;
 }
 .logo {

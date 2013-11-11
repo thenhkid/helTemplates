@@ -34,6 +34,13 @@ h1,h2,h3 {
 }
 
 
+.media-list {
+	li {
+		border-bottom:1px solid @medium-border-color;
+	}
+}
+
+
 .panel-form {
 	border-bottom:0;
 	box-shadow: none;
@@ -80,6 +87,7 @@ h1,h2,h3 {
 			width:auto;
 		}
 	}
+	border:0;
 }
 
 // buttons
@@ -214,6 +222,7 @@ h1,h2,h3 {
 .secondary-nav {
 
 	.nav {
+
 		>li > a{
 			border-radius:0;
 			color:@text-color;
@@ -224,6 +233,8 @@ h1,h2,h3 {
 				background-color:transparent;
 				color:#333;
 			}
+
+			background-image:none;
 		}
 
 		li ul li a{
@@ -232,13 +243,20 @@ h1,h2,h3 {
 			border-bottom:0;
 		}
 
-		li.active a{
-			background-color: transparent;
-			color:@gray-darker;
-			font-weight: bold;
+		> li.active {
+
+			> a{
+				background-color: transparent;
+				color:@gray-darker;
+				font-weight: bold;
+			}
+		}
+
+		.nav li.active > a {
 			.sprite-common(-100px,7px)
 		}
 	}
+
 }
 
 // Header section
@@ -353,6 +371,29 @@ h1,h2,h3 {
 
 }
 
+.modal-media {
+
+	&.video-modal {
+
+		.modal-content {
+			background-color: #000;
+		}
+
+		.modal-header {
+			border-bottom:0;
+			border-bottom:1px solid #222;
+			h3 {
+				color:#666;
+			}
+
+			.close {
+				color:#fff;
+			}
+		}
+	}
+
+}
+
 .section-title {
 	font-weight: bold;
 }
@@ -409,16 +450,24 @@ h1,h2,h3 {
 
 // content call out area
 .content-call-out {
-	border-width: 1px 0 1px 0;
+	border-width: 1px 0 0px 0;
 	border-style: solid;
 	border-color: @medium-border-color;
-
+	border-collapse: collapse;
 
 	p {
 		font-size: @font-size-medium;
 		font-family: @serif-font;
 		font-style: italic;
 	}
+}
+
+
+.content-inset {
+	width:200px;
+	margin:20px;
+	border-width:1px 0 1px 0;
+	border-bottom:1px solid @medium-border-color;
 }
 
 // social icons

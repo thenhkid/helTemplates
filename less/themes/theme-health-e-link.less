@@ -196,32 +196,18 @@
 .product-suite {
 	background-color:#1b2e3e;
 	color:#709dc3;
-	h3, h3 a{
+
+	h2, h3, h3 a{
 		color:@white;
+	}
+
+	h3, h3 a{
 		font-size: @font-size-large;
 	}
 
 	.product-summary {
-		text-align: center;
 		padding-top:50px;
 		padding-bottom:50px;
-	}
-
-	.icon-product {
-		width:112px;
-		height: 112px;
-		display: block;
-		.sprite-health-e-link(0, -100px);
-		margin: auto;
-	}
-
-
-	.icon-health-e-data {
-		.sprite-health-e-link(-120px, -100px);
-	}
-
-	.icon-health-e-web {
-		.sprite-health-e-link(-240px, -100px);
 	}
 
 	.btn-secondary {
@@ -232,6 +218,36 @@
 		.border-radius(5px);
 		color:#95c0e5;
 	}
+
+	.icon-product {
+		margin-right: 20px;
+	}
+}
+
+.home .product-suite {
+	.icon-product {
+		margin: auto;
+	}
+
+	.product-summary {
+		text-align: center;
+	}
+}
+
+.icon-product {
+	width:112px;
+	height: 112px;
+	display: block;
+	.sprite-health-e-link(0, -100px);
+}
+
+
+.icon-health-e-data {
+	.sprite-health-e-link(-120px, -100px);
+}
+
+.icon-health-e-web {
+	.sprite-health-e-link(-240px, -100px);
 }
 
 .icon-play {
@@ -279,7 +295,6 @@
 
 .btn-action{
 	text-transform: uppercase;
-	padding:15px 40px;
 	.border-radius(8px);
 	background: #118dfe; /* Old browsers */
 	background: -moz-linear-gradient(top,  #118dfe 0%, #0b5ea9 100%); /* FF3.6+ */
@@ -354,7 +369,7 @@
 	background-color: @base-nav-color;
 
 	.navbar-nav{
-		li.active > a, li.active > a:hover{
+		> .active > a, > li.active > a:hover{
 			color:darken(@nav-text-color, 10%)
 		}
 	}

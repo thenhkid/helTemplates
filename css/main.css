@@ -5992,6 +5992,35 @@ td.visible-print {
 .modal {
   overflow: auto;
 }
+.modal-media.image-modal .modal-dialog {
+  min-width: 0;
+  box-sizing: content-box;
+}
+.modal-media.image-modal .modal-body {
+  padding: 20px;
+  box-sizing: content-box;
+}
+.modal-media.image-modal .modal-image {
+  margin: auto;
+  display: block;
+}
+.modal-media.image-modal .modal-iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.modal-media.pdf-modal .modal-content {
+  position: relative;
+  max-height: 100%;
+  height: 100%;
+}
+.modal-media.pdf-modal .modal-body {
+  box-sizing: border-box;
+}
+.modal-media.pdf-modal .modal-dialog {
+  width: 90%;
+  height: 100%;
+}
 .logo {
   width: 125px;
   height: 30px;
@@ -6191,7 +6220,7 @@ td.visible-print {
   margin-bottom: 0;
 }
 .actions-nav {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .actions-nav .navbar-brand {
   padding-top: 21px;
@@ -6258,18 +6287,28 @@ td.visible-print {
 }
 .main-container {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .home .main-container {
   padding-top: 30px;
 }
-.page-content h2:first-child {
+.page-content h2:first-of-type,
+.page-content h3:first-of-type {
   margin-top: 0;
+}
+.content-inset {
+  width: 200px;
+  margin: 20px;
 }
 .email-list-signup {
   padding: 20px 0;
 }
 .email-list-signup .form-inline > * {
   margin-right: 10px;
+}
+.media-list li {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .page-title {
   font-size: 36px;
@@ -6327,6 +6366,9 @@ td.visible-print {
   .secondary .affix-bottom {
     width: 263px;
   }
+}
+.btn-action {
+  padding: 10px 30px;
 }
 .margin-small {
   margin: 5px;
