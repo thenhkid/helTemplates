@@ -14,6 +14,9 @@ a:hover {
 :focus {
   outline: 0;
 }
+body {
+  background-color: #ffffff;
+}
 h1,
 h2,
 h3 {
@@ -41,28 +44,20 @@ h3 {
 .panel-form .panel-heading {
   background: #f1f1f1;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #ffffff));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #f1f1f1 0%, #ffffff 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
-
   border-bottom: 0;
 }
 .panel-form .panel-heading label,
@@ -137,7 +132,7 @@ h3 {
   padding-bottom: 10px;
 }
 .sub-nav .nav-pills > li > a {
-  color: #999999;
+  color: #cccccc;
 }
 .sub-nav .nav-pills > li > a:hover {
   color: #333;
@@ -247,6 +242,9 @@ h3 {
 .navbar-brand,
 .navbar-brand:hover {
   color: #ffffff;
+}
+.header-inner {
+  background-color: #000;
 }
 .actions-nav {
   border: 0;
@@ -374,8 +372,8 @@ h3 {
   background-repeat: no-repeat;
   background-position: -80px -20px;
 }
-body#login {
-  background-color: #efefef;
+.login-header-content {
+  background-color: #666;
 }
 .header {
   background-image: url('../../img/health-e-link/bg-header.jpg');
@@ -384,134 +382,25 @@ body#login {
   background-image: url('../../img/health-e-link/bg-page-title.png');
   background-position: right bottom;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 .home .header {
   height: 609px;
   background-image: url('../../img/health-e-link/bg-header-home.jpg');
 }
 .home .header-inner {
+  height: 100%;
   background-image: url('../../img/health-e-link/bg-home-central-graphic.png');
   background-position: center bottom;
   background-repeat: no-repeat;
-  height: 100%;
-}
-.central-graphic {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-sizing: border-box;
-  height: 535px;
-  position: relative;
-}
-.central-graphic h1 {
-  line-height: 48px;
 }
 .central-graphic h1,
 .central-graphic h1 small {
-  font-weight: bold;
-  font-size: 36px;
   color: #003366;
-  text-align: center;
-}
-.central-graphic h1 small {
-  font-weight: normal;
-  display: block;
 }
 .central-graphic h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
-  font-size: 16px;
-  text-align: center;
   color: #003366;
   line-height: 21px;
-}
-.central-graphic .central-graphic-content {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 40px;
-}
-.central-graphic .btn-action {
-  margin: 10px 10px;
-}
-.central-graphic .central-graphic-image {
-  position: absolute;
-  -webkit-transition: left 1s, right 1s;
-  transition: left 1s, right 1s;
-  padding-bottom: 20px;
-}
-.central-graphic .central-graphic-image img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 5px solid #fff;
-}
-.central-graphic .central-graphic-image.image-b img {
-  width: 114px;
-}
-.central-graphic .central-graphic-image.image-c img {
-  width: 140px;
-}
-.central-graphic .central-graphic-image .caret {
-  width: 30px;
-  position: absolute;
-  bottom: 0;
-  height: 20px;
-  border-left-width: 20px;
-  border-right-width: 20px;
-  border-top-width: 15px;
-  border-top-color: #fff;
-  left: 50%;
-  margin-left: -15px;
-}
-@media (max-width: 767px) {
-  .central-graphic .image-a,
-  .central-graphic .image-b,
-  .central-graphic .image-c {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .central-graphic .image-a {
-    top: 180px;
-    left: -10px;
-  }
-  .central-graphic .image-b {
-    top: 170px;
-    left: 300px;
-  }
-  .central-graphic .image-c {
-    top: 200px;
-    right: 70px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .central-graphic .image-a {
-    top: 180px;
-    left: 90px;
-  }
-  .central-graphic .image-b {
-    top: 170px;
-    left: 420px;
-  }
-  .central-graphic .image-c {
-    top: 160px;
-    right: 0px;
-  }
-}
-@media (min-width: 1200px) {
-  .central-graphic .image-a {
-    top: 180px;
-    left: 180px;
-  }
-  .central-graphic .image-b {
-    top: 170px;
-    left: 510px;
-  }
-  .central-graphic .image-c {
-    top: 160px;
-    right: 100px;
-  }
 }
 .page-title-icon {
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
@@ -527,37 +416,14 @@ body#login {
 .product-suite h3 a {
   color: #ffffff;
 }
-.product-suite h3,
-.product-suite h3 a {
-  font-size: 18px;
-}
-.product-suite .product-summary {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 .product-suite .btn-secondary {
   background-color: #193c57;
-  padding: 10px 15px;
-  margin: 20px 0 0 0;
-  display: inline-block;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #95c0e5;
 }
-.product-suite .icon-product {
-  margin-right: 20px;
-}
-.home .product-suite .icon-product {
-  margin: auto;
-}
-.home .product-suite .product-summary {
-  text-align: center;
-}
 .icon-product {
-  width: 112px;
-  height: 112px;
-  display: block;
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
   background-repeat: no-repeat;
   background-position: 0 -100px;
@@ -576,41 +442,19 @@ body#login {
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
   background-repeat: no-repeat;
   background-position: -40px -60px;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  vertical-align: middle;
 }
 .icon-health-e-link {
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
   background-repeat: no-repeat;
   background-position: 0px -60px;
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  vertical-align: middle;
 }
 .product-suite-header {
-  padding: 20px 0;
   background-color: #16558f;
 }
 .product-suite-header a,
 .product-suite-header h2 {
-  color: #ffffff;
-  line-height: 100%;
-}
-.product-suite-header .icon-play,
-.product-suite-header .icon-health-e-link {
-  margin-right: 5px;
-  margin-top: -6px;
-}
-.product-suite-header h2 {
   font-weight: bold;
-  margin: 0;
-  white-space: nowrap;
-}
-.product-suite-header .product-demo {
-  margin-top: 5px;
+  color: #ffffff;
 }
 .btn-action {
   text-transform: uppercase;
@@ -619,28 +463,20 @@ body#login {
   border-radius: 8px;
   background: #118dfe;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #118dfe 0%, #0b5ea9 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #118dfe), color-stop(100%, #0b5ea9));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #118dfe 0%, #0b5ea9 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #118dfe 0%, #0b5ea9 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #118dfe 0%, #0b5ea9 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #118dfe 0%, #0b5ea9 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#118dfe', endColorstr='#0b5ea9', GradientType=0);
   /* IE6-9 */
-
   -webkit-box-shadow: 0 2px 1px #000000;
   box-shadow: 0 2px 1px #000000;
   border: 0;
@@ -648,132 +484,92 @@ body#login {
 .btn-action:hover {
   background: #2a98fe;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #2a98fe 0%, #0d71c9 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2a98fe), color-stop(100%, #0d71c9));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #2a98fe 0%, #0d71c9 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #2a98fe 0%, #0d71c9 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #2a98fe 0%, #0d71c9 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #2a98fe 0%, #0d71c9 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a98fe', endColorstr='#0d71c9', GradientType=0);
   /* IE6-9 */
-
 }
 .btn-action:active {
   background: #0169cb;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #0169cb 0%, #084880 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0169cb), color-stop(100%, #084880));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #0169cb 0%, #084880 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #0169cb 0%, #084880 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #0169cb 0%, #084880 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #0169cb 0%, #084880 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0169cb', endColorstr='#084880', GradientType=0);
   /* IE6-9 */
-
 }
 .btn-primary-action {
   background: #3fb417;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #3fb417 0%, #3b9224 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fb417), color-stop(100%, #3b9224));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #3fb417 0%, #3b9224 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #3fb417 0%, #3b9224 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #3fb417 0%, #3b9224 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #3fb417 0%, #3b9224 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3fb417', endColorstr='#3b9224', GradientType=0);
   /* IE6-9 */
-
 }
 .btn-primary-action:hover {
   background: #48cf1b;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #48cf1b 0%, #46ac2a 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #48cf1b), color-stop(100%, #46ac2a));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #48cf1b 0%, #46ac2a 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #48cf1b 0%, #46ac2a 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #48cf1b 0%, #46ac2a 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #48cf1b 0%, #46ac2a 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48cf1b', endColorstr='#46ac2a', GradientType=0);
   /* IE6-9 */
-
 }
 .btn-primary-action:active {
   background: #2f8812;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #2f8812 0%, #2d6d1b 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f8812), color-stop(100%, #2d6d1b));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #2f8812 0%, #2d6d1b 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #2f8812 0%, #2d6d1b 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #2f8812 0%, #2d6d1b 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #2f8812 0%, #2d6d1b 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f8812', endColorstr='#2d6d1b', GradientType=0);
   /* IE6-9 */
-
 }
 .primary-nav {
   background-color: rgba(255, 255, 255, 0.5);
@@ -786,8 +582,6 @@ body#login {
   background-image: url('../../img/health-e-link/sp-health-e-link.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  width: 194px;
-  height: 44px;
 }
 .info-list dt {
   color: #709dc3;

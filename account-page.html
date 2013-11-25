@@ -42,7 +42,17 @@
 				<div class="container">
 					<div class="navbar-header">
 						<a href="" class="navbar-brand" title="{company name}">
-							<span class="logo" alt="{Company Name Logo}"></span>
+						<!--
+							<img src="img/health-e-link/img-health-e-link-logo.png" class="logo" alt="Health-e-Link Logo"/>
+							Required logo specs:
+							logo width: 125px
+							logo height: 30px
+
+							Plain text can be used without image logo
+
+							sprite can be used with class="logo":
+						-->
+							<span class="identity logo" alt="{Company Name Logo}">Health-e-Link</span>
 						</a>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 							<span class="sr-only">Toggle navigation</span>
@@ -53,14 +63,15 @@
 					</div>
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="" title="About">About</a></li>
+							<li><a href="" title="About">About</a></li>
 							<li><a href="" title="Product Suite">Product Suite</a></li>
 							<li><a href="" title="Solutions">Solutions</a></li>
 							<li><a href="" title="Contact">Contact</a></li>
-							<li><a href="#" title="My Account" data-toggle="dropdown">My Account <b class="caret"></b></a>
+							<li class="active"><a href="#" title="My Account" data-toggle="dropdown">My Account <b class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="My account dropdown">
-									<li><a href="" title="">My account nav 1</a></li>
-									<li><a href="" title="">My account nav 2</a></li>
+									<li><a href="" title="Edit Account">Edit Account</a></li>
+									<li><a href="" title="Exchange">Exchange</a></li>
+									<li><a href="" title="eRG">eRG</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -77,16 +88,19 @@
 
 
 			<nav class="navbar navbar-default actions-nav" role="navigation">
-				<div class="contain">
+				<div class="container">
 					<ul class="nav navbar-nav navbar-actions">
-						<li class="active"><a href="" title="Inbox" class="btn btn-link"><span class="glyphicon glyphicon-inbox"></span>&nbsp; Inbox</a><span class="indicator-active arrow-up"></span></li>
+						<li><a href="" title="Inbox" class="btn btn-link"><span class="glyphicon glyphicon-inbox"></span>&nbsp; Inbox</a><span class="indicator-active arrow-up"></span></li>
 						<li><a href="" title="Sent" class="btn btn-link"><span class="glyphicon glyphicon-send"></span>&nbsp; Sent</a><span class="indicator-active arrow-up"></span></li>
 						<li><a href="" title="History" class="btn btn-link"><span class="glyphicon glyphicon-time"></span>&nbsp; History</a><span class="indicator-active arrow-up"></span></li>
 					</ul>
 
-					<div class="pull-right margin-medium top">
-						<a href="" title="" class="btn btn-primary">Create New Referral</a>
-					</div>
+					<ul class="nav navbar-nav navbar-right navbar-actions">
+						<li class="active">
+							<a href="" title="" >Create New Referral</a>
+							<span class="indicator-active arrow-up"></span>
+						</li>
+					</ul>
 				</div>
 			</nav>
 
@@ -197,13 +211,135 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-			      </div>
-			    </div>
-			  </div>
+
+
+
+					<div class="form-section row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="name">Name *</label>
+								<input id="name" name="name" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label for="company">Company / Organization *</label>
+								<input id="fname" name="company" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label for="address">Address *</label>
+								<input id="fname" name="address" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-3">
+										<label for="city">City</label>
+										<input id="fname" name="city" class="form-control" type="text" />
+									</div>
+									<div class="col-xs-2">
+										<label for="state">State </label>
+										<input id="fname" name="state" class="form-control" type="text" />
+									</div>
+									<div class="col-xs-2">
+										<label for="state">Zip</label>
+										<input id="fname" name="state" class="form-control" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-4">
+										<label for="phone">Phone</label>
+										<input id="phone" name="phone" class="form-control" type="text" />
+									</div>
+									<div class="col-xs-2">
+										<label for="ext">Ext </label>
+										<input id="ext" name="state" class="form-control" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-4">
+										<label for="phone">Fax</label>
+										<input id="phone" name="phone" class="form-control" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email">Email *</label>
+								<input id="fname" name="email" class="form-control half" type="text" />
+								<a href="" title="">Privacy Policy</a>
+							</div>
+							<div class="form-group">
+								<label for="interest">I am Intersted In:</label>
+								<div class="row">
+									<div class="col-xs-3">
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Exchange
+											</label>
+										</div>
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Rapid Registry
+											</label>
+										</div>
+									</div>
+									<div class="col-xs-3">
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Doc-u-Link
+											</label>
+										</div>
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											Referral Link
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section row">
+						<div class="col-md-12">
+							<h4 class="form-section-heading">Diagnosis</h4>
+							<div class="form-group">
+								<label for="email" class="sr-only">Diagnosis</label>
+								<textarea class="form-control">
+								</textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section row">
+						<div class="col-md-12">
+							<div class="form-inline form-inline-varient">
+								<div class="form-group">
+									<label for="email">Referral ID</label> <input type="text" value="" class="form-control"/>
+								</div>
+								<div class="form-group">
+									<label for="email">Priority</label>
+									<input type="text" value="" class="form-control"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-action" value="Send Referral"/>
+					</div>
+				</div>
 			</div>
-		</form>
+		</div>
+	</div>
+</div>
+</form>
 
 			</div>
 		</div>

@@ -28,8 +28,6 @@ require(['jquery','bootstrap', 'responsive-tables', 'mediaModal'], function ($) 
 		}
 	});
 
-	$('.header').test();
-
 	// overwrite scrollspy to get rid of activating parent list items
 	$.fn.scrollspy.Constructor.prototype.activate = function (target) {
 		this.activeTarget = target;

@@ -14,6 +14,9 @@ a:hover {
 :focus {
   outline: 0;
 }
+body {
+  background-color: #ffffff;
+}
 h1,
 h2,
 h3 {
@@ -41,28 +44,20 @@ h3 {
 .panel-form .panel-heading {
   background: #f1f1f1;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #ffffff));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
   /* IE10+ */
-
   background: linear-gradient(to bottom, #f1f1f1 0%, #ffffff 100%);
   /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
-
   border-bottom: 0;
 }
 .panel-form .panel-heading label,
@@ -137,7 +132,7 @@ h3 {
   padding-bottom: 10px;
 }
 .sub-nav .nav-pills > li > a {
-  color: #999999;
+  color: #cccccc;
 }
 .sub-nav .nav-pills > li > a:hover {
   color: #333;
@@ -248,6 +243,9 @@ h3 {
 .navbar-brand:hover {
   color: #ffffff;
 }
+.header-inner {
+  background-color: #000;
+}
 .actions-nav {
   border: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -300,7 +298,7 @@ h3 {
 .page-content h3,
 .page-content h4,
 .page-content h5 {
-  color: #003366;
+  color: #333333;
 }
 .arrow-left {
   background-image: url('../../img/sp-common.png');
@@ -374,6 +372,6 @@ h3 {
   background-repeat: no-repeat;
   background-position: -80px -20px;
 }
-body#login {
-  background-color: #efefef;
+.login-header-content {
+  background-color: #666;
 }
