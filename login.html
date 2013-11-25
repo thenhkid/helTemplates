@@ -9,56 +9,128 @@
 <title></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
 <!-- main css compiled from main.less -->
 <link rel="stylesheet" href="css/main.css?v=2">
 
-<!-- default theme 
-	<link rel="stylesheet" href="css/themes/theme-default.css">
--->
+<!-- default theme -->
+<link rel="stylesheet" href="css/themes/theme-default.css">
 
-<!-- Health-e-link theme -->
+<!-- Health-e-link theme 
 <link rel="stylesheet" href="css/themes/theme-health-e-link.css">
-
-
+-->
 <!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/ie.css">
 <![endif]-->
-
 </head>
 <body class="theme-default" id="login" >
-
 	<!--[if lt IE 7]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
 
+	<!-- Header -->
+	<header id="header" class="header" role="banner">
+		<div class="header-inner">
+		<!-- Primary Nav -->
+		<!--role="navigation" used for accessibility -->
+			<nav class="navbar primary-nav" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="" class="navbar-brand" title="{company name}">
+						<!--
+							<img src="img/health-e-link/img-health-e-link-logo.png" class="logo" alt="Health-e-Link Logo"/>
+							Required logo specs:
+							logo width: 125px
+							logo height: 30px
 
-	<div class="loginContainer">
-		<div class="login" style="overflow:hidden">
-			<div style="background-color:#666; margin-left:-20px; margin-right:-20px; margin-top:-20px; padding:15px 20px; margin-bottom:20px;">
-				<span class="logo" alt="{Company Name Logo}" style=""></span>
-			</div>
-			<form role="form">
-				<div class="form-group">
-					<label for="fieldA">Username</label>
-					<input id="fieldA" class="form-control" type="text" />
+							Plain text can be used without image logo
+
+							sprite can be used with class="logo":
+						-->
+							<span class="identity logo" alt="{Company Name Logo}">Health-e-Link</span>
+						</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li ><a href="" title="About">About</a></li>
+							<li><a href="" title="Product Suite">Product Suite</a></li>
+							<li><a href="" title="Solutions">Solutions</a></li>
+							<li><a href="" title="Contact">Contact</a></li>
+							<li class="active"><a href="#" title="My Account" data-toggle="dropdown">My Account <b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="My account dropdown">
+									<li><a href="" title="">My account nav 1</a></li>
+									<li><a href="" title="">My account nav 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="form-group">
-					<label for="fieldA">Password</label>
-					<input id="fieldA" class="form-control" type="text" />
-				</div>
-			<p class="pull-right" style="margin-bottom:0"><input type="submit" value="Login" class="btn btn-primary"/></p>
-			<p class="pull-left"style="text-align:center"><input type="checkbox"> &nbsp;Remember Me</p>
-		</form>
+			</nav>
+
+			<div class="container"><h1 class="page-title">Login</h1></div>
 		</div>
-		<p style="text-align:center; margin-top:10px"><a href="" title="">Forgot Password</a></p>
+	</header>
+	<!-- End Header -->
+	<div class="container main-container" role="main">
+		<div class="row">
+			<div class="col-md-12 page-content">
+				<div class="login-container">
+					<div class="login clearfix">
+						<form role="form">
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input id="username" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label for="passwrod">Password</label>
+								<input id="password" class="form-control" type="text" />
+							</div>
+							<input type="submit" value="Login" class="btn btn-primary pull-right"/>
+							<label for="remember-me" class="pull-left"><input type="checkbox" id="remember-me" value="1">&nbsp;Remember Me</label>
+						</form>
+					</div>
+					<p class="login-note"><a href="" title="">Forgot Password</a></p>
+				</div>
+		</div>
 	</div>
+</div>
 
 
+<footer class="footer">
+	<div class="container">
+		<nav>
+			<ul class="nav-inline">
+				<li><a href="" title="">Home</a></li>
+				<li><a href="" title="">About</a></li>
+				<li><a href="" title="">Product Suite</a></li>
+				<li><a href="" title="">Solutions</a></li>
+				<li><a href="" title="">Contact</a></li>
+				<li><a href="" title="">Partners</a></li>
+				<li><a href="" title="">My Account</a></li>
+				<li><a href="" title="">Site Map</a></li>
+				<li><a href="" title="">Privacy</a></li>
+			</ul>
+		</nav>
 
-
-	<!-- 
+		<p class="vcard">
+			<span class="fn">BOWlink Technologies, Inc</span> |
+			<span class="adr"><span class="post-office-box">P.O. Box 275</span>,
+			<span class="region">Auburn, MA</span>
+			<span class="postal-code">01501</span></span> |
+			Phone: <span class="tel">(508) 721-1977</span> |
+			<a class="email" href="mailto:info@health-e-link.net">mailto:info@health-e-link.net</a>
+		</p>
+		<p>
+		Copyright 2013 BOWlink Technologies Inc. All rights reserved</p>
+		</p>
+	</div>
+</footer>
+	<!--
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 	-->

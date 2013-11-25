@@ -19,6 +19,10 @@ a:hover {
 	outline: 0;
 }
 
+body {
+	background-color: @white;
+}
+
 h1,h2,h3 {
 	color: @gray-darker;
 }
@@ -27,6 +31,68 @@ h1,h2,h3 {
 	border-bottom: 1px solid @table-border-color;
 }
 
+.page-content .form-section-heading {
+	color:#333;
+	font-size: @font-size-base;
+	font-weight: bold;
+}
+
+
+.media-list {
+	li {
+		border-bottom:1px solid @medium-border-color;
+	}
+}
+
+
+.panel-form {
+	border-bottom:0;
+	box-shadow: none;
+
+	.panel-body {
+		border-bottom:0;
+	}
+
+	.panel-heading {
+		background: #f1f1f1; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f1f1f1 0%, #ffffff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f1f1f1 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f1f1f1 0%,#ffffff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f1f1f1 0%,#ffffff 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f1f1f1 0%,#ffffff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		border-bottom:0;
+
+		label, h3{
+			font-size: @font-size-large;
+			font-weight: normal;
+			color:#333;
+		}
+
+		h3 {
+			cursor: pointer;
+
+			&.disabled {
+				color:#aaa;
+				cursor: not-allowed;
+			}
+		}
+
+		+ .panel-collapse {
+			.panel-body {
+				border-top:0;
+			}
+		}
+
+		.form-control
+		{
+			display:inline-block;
+			width:auto;
+		}
+	}
+	border:0;
+}
 
 // buttons
 .btn-secondary {
@@ -160,6 +226,7 @@ h1,h2,h3 {
 .secondary-nav {
 
 	.nav {
+
 		>li > a{
 			border-radius:0;
 			color:@text-color;
@@ -170,6 +237,8 @@ h1,h2,h3 {
 				background-color:transparent;
 				color:#333;
 			}
+
+			background-image:none;
 		}
 
 		li ul li a{
@@ -178,14 +247,23 @@ h1,h2,h3 {
 			border-bottom:0;
 		}
 
-		li.active a{
-			background-color: transparent;
-			color:@gray-darker;
-			font-weight: bold;
+		> li.active {
+
+			> a{
+				background-color: transparent;
+				color:@gray-darker;
+				font-weight: bold;
+			}
+		}
+
+		.nav li.active > a {
 			.sprite-common(-100px,7px)
 		}
 	}
+
 }
+
+
 
 // Header section
 .primary-nav {
@@ -255,32 +333,76 @@ h1,h2,h3 {
 	color:@white;
 }
 
+
+.header-inner {
+	background-color: #000;
+}
+
 // Actions bar
 .actions-nav {
-	border-bottom:0;
-	border-top:0;
-	background-color: @white;
-	border-bottom:1px solid @light-shadow-color;
 
-	.border-radius(0);
-	.box-shadow(0 5px 10px 0 @light-shadow-color);
+	border:0;
+	background-color: @base-subnav-color;
 
-
-	.navbar-nav > li > a {
-		color:@brand-primary;
-
-		&:hover {
-			color:darken(@brand-primary, 10%);
+	.navbar-nav {
+		li > a, li > a:hover {
+			color:@subnav-text-color;
 		};
 
-		&:hover .custom-icon {
-			// background-color:darken(@brand-primary, 10%);
-		};
+		li {
+			&.active > a {
+				background-color: @subnav-active-background-color;
+				color: @subnav-active-text-color;
+
+				&:hover {
+					color: @subnav-active-text-color;
+					background-color: @subnav-active-background-color;
+				}
+			}
+
+			> a {
+				border-right:0px solid @subnav-border-shadow-color;
+				border-left:0px solid @subnav-border-highlight-color;
+
+				&:hover {
+					background-color: @subnav-hover-background-color;
+				};
+			}
+		}
+
+		li:first-child > a {
+			border-left:0;
+		}
+
+
+		li:last-child > a {
+			border-right:0;
+		}
 	}
 
-	.custom-icon {
-		// background-color: @brand-primary;
+}
+
+.modal-media {
+
+	&.video-modal {
+
+		.modal-content {
+			background-color: #000;
+		}
+
+		.modal-header {
+			border-bottom:0;
+			border-bottom:1px solid #222;
+			h3 {
+				color:#666;
+			}
+
+			.close {
+				color:#fff;
+			}
+		}
 	}
+
 }
 
 .section-title {
@@ -307,6 +429,8 @@ h1,h2,h3 {
 
 .footer {
 	color: @secondary-text-color;
+	border-top:1px solid @medium-border-color;
+	border-collapse: collapse;
 }
 
 .icon-cancel {
@@ -331,23 +455,30 @@ h1,h2,h3 {
 // email list
 .email-list-signup {
 	background-color: @light-shadow-color;
-	border-bottom:1px solid @medium-border-color;
 	border-top:1px solid @medium-border-color;
 	border-collapse: collapse;
 }
 
 // content call out area
 .content-call-out {
-	border-width: 1px 0 1px 0;
+	border-width: 1px 0 0px 0;
 	border-style: solid;
 	border-color: @medium-border-color;
-
+	border-collapse: collapse;
 
 	p {
 		font-size: @font-size-medium;
 		font-family: @serif-font;
 		font-style: italic;
 	}
+}
+
+
+.content-inset {
+	width:200px;
+	margin:20px;
+	border-width:1px 0 1px 0;
+	border-bottom:1px solid @medium-border-color;
 }
 
 // social icons
@@ -367,10 +498,10 @@ h1,h2,h3 {
 	.sprite-common(-80px, -20px);
 }
 
+// login
 
-// Page specific styles
-body#login {
-	background-color: #efefef;
+.login-header-content {
+	background-color: #666;
 }
 
 
