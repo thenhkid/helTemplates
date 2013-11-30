@@ -1,5 +1,5 @@
-@import '../bootstrap/variables.less';
-@import '../bootstrap/mixins.less';
+@import '../../bootstrap/variables.less';
+@import '../../bootstrap/mixins.less';
 @import '../varriables.less';
 @import '../mixins.less';
 @import '../theme-base.less';
@@ -10,24 +10,24 @@
 @nav-hover-background-color: lighten(@base-nav-color, 10%);
 @nav-border-highlight-color: lighten(@base-nav-color, 10%);
 @nav-border-shadow-color: darken(@base-nav-color, 15%);
-@sprite-common-url: '../../img/sp-common.png';
+@sprite-common-url: '../../../img/front-end/sp-common.png';
 @content-accent-color:#709dc3;
 @brand-secondary:       #003366;
 
 // mixins
 .sprite-health-e-link(@left:0; @top:0;) {
-	background-image: url('../../img/health-e-link/sp-health-e-link.png');
+	background-image: url('../../../img/front-end/health-e-link/sp-health-e-link.png');
 	background-repeat: no-repeat;
 	background-position: @left @top;
 }
 
 
 .header {
-	background-image: url('../../img/health-e-link/bg-header.jpg');
+	background-image: url('../../../img/front-end/health-e-link/bg-header.jpg');
 }
 
 .header-inner {
-	background-image: url('../../img/health-e-link/bg-page-title.png');
+	background-image: url('../../../img/front-end/health-e-link/bg-page-title.png');
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-color: transparent;
@@ -37,12 +37,12 @@
 .home {
 	.header {
 		height:609px;
-		background-image: url('../../img/health-e-link/bg-header-home.jpg');
+		background-image: url('../../../img/front-end/health-e-link/bg-header-home.jpg');
 	}
 
 	.header-inner {
 		height: 100%;
-		background-image: url('../../img/health-e-link/bg-home-central-graphic.png');
+		background-image: url('../../../img/front-end/health-e-link/bg-home-central-graphic.png');
 		background-position: center bottom;
 		background-repeat: no-repeat;
 	}

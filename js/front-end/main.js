@@ -1,10 +1,10 @@
 require.config({
 	urlArgs: "bust=" + (new Date()).getTime(),
 	paths: {
-		'jquery' : 'vendor/jquery-1.10.1',
-		'bootstrap' : 'vendor/bootstrap',
-		'responsive-tables' : 'vendor/responsive-tables',
-		'mediaModal' : 'mediaModal'
+		'jquery' : '../vendor/jquery-1.10.1',
+		'bootstrap' : '../vendor/bootstrap',
+		'responsive-tables' : '../vendor/responsive-tables',
+		'mediaModal' : '../mediaModal'
 	},
 	shim: {
 		'bootstrap': ['jquery'],
