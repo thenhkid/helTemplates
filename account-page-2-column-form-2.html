@@ -215,10 +215,12 @@
 
 
 					<div class="form-section row">
-						<div class="col-md-6">
+						<div class="col-md-12"><h4 class="form-section-heading">Message Details</h4></div>
+						<div class="col-md-6 cb">
 							<div class="form-group">
 								<label for="name">Name *</label>
 								<input id="name" name="name" class="form-control" type="text" />
+								<span id="errorMsg_${detailInfo.fieldNo}" class="control-label">This is an error message</span>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -227,10 +229,11 @@
 								<input id="fname" name="company" class="form-control" type="text" />
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 cb">
 							<div class="form-group">
 								<label for="address">Address *</label>
 								<input id="fname" name="address" class="form-control" type="text" />
+								<span id="errorMsg_${detailInfo.fieldNo}" class="control-label">This is an error message</span>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -251,7 +254,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 cb">
 							<div class="form-group">
 								<div class="row">
 									<div class="col-xs-8">
@@ -275,7 +278,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 cb">
 							<div class="form-group">
 								<label for="email">Email *</label>
 								<input id="fname" name="email" class="form-control half" type="text" />
