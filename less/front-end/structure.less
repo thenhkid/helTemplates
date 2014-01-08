@@ -352,6 +352,11 @@ html, body {
 
 
 // forms
+.lt-ie9 {
+	input[type=radio], input[type=checkbox]{
+		margin-top:4px;
+	}
+}
 
 .form-inine-varient label {
 	display:inline-block;
@@ -536,6 +541,7 @@ html, body {
 
 // Primary Nav
 .primary-nav {
+	z-index: 1001;
 	margin-bottom:0;
 	border-radius: 0;
 	padding:15px 0;
@@ -712,6 +718,10 @@ html, body {
 			padding-bottom:15px;
 		}
 	}
+
+	.badge {
+		padding:2px 5px;
+	}
 }
 
 
@@ -876,7 +886,6 @@ html, body {
 .btn-action {
 	padding:10px 30px;
 }
-
 
 // Helpers
 .margin-small {

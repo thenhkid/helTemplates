@@ -4,7 +4,9 @@ require.config({
 		'jquery' : '../vendor/jquery-1.10.1',
 		'bootstrap' : '../vendor/bootstrap',
 		'responsive-tables' : '../vendor/responsive-tables',
-		'mediaModal' : '../mediaModal'
+		'mediaModal' : '../mediaModal',
+		'overlay' : '../overlay',
+		'sprintf' : '../vendor/sprintf'
 	},
 	shim: {
 		'bootstrap': ['jquery'],
@@ -12,7 +14,7 @@ require.config({
 	}
 });
 
-require(['jquery','bootstrap', 'responsive-tables', 'mediaModal'], function ($) {
+require(['jquery','bootstrap', 'responsive-tables', 'mediaModal', 'overlay'], function ($) {
 
 	// left nav fixed nav bar
 	$('.fixed-region').affix({
@@ -27,6 +29,7 @@ require(['jquery','bootstrap', 'responsive-tables', 'mediaModal'], function ($) 
 			}
 		}
 	});
+
 
 	// overwrite scrollspy to get rid of activating parent list items
 	$.fn.scrollspy.Constructor.prototype.activate = function (target) {
@@ -54,4 +57,10 @@ require(['jquery','bootstrap', 'responsive-tables', 'mediaModal'], function ($) 
 	// left nav scrollspy
 	$('body').scrollspy({ target: '#active-page-nav' });
 
+	/*
+	$('body').overlay({
+		glyphicon : 'floppy-disk',
+		message : 'Saving...'
+	});
+	*/
 });
