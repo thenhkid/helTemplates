@@ -6,7 +6,8 @@ require.config({
 		'responsive-tables' : '../vendor/responsive-tables',
 		'mediaModal' : '../mediaModal',
 		'overlay' : '../overlay',
-		'sprintf' : '../vendor/sprintf'
+		'sprintf' : '../vendor/sprintf',
+		'fixed-header' : '../fixed-header'
 	},
 	shim: {
 		'bootstrap': ['jquery'],
@@ -14,13 +15,16 @@ require.config({
 	}
 });
 
-require(['jquery','bootstrap', 'responsive-tables', 'mediaModal', 'overlay'], function ($) {
+require(['jquery', 'fixed-header','bootstrap', 'responsive-tables', 'mediaModal', 'overlay'], function ($, fixedHeader) {
+
+	var primaryNav = $('.primary-nav');
+	var primaryNavHeight = primaryNav.outerHeight();
 
 	// left nav fixed nav bar
 	$('.fixed-region').affix({
 		offset: {
 			top: function () {
-				return $('.main-container').position().top;
+				return $('.main-container').position().top + primaryNavHeight;
 			},
 			bottom: function () {
 				// calculate how far down the content section goes down the page
@@ -54,8 +58,13 @@ require(['jquery','bootstrap', 'responsive-tables', 'mediaModal', 'overlay'], fu
 		active.trigger('activate');
 	};
 
+
+
 	// left nav scrollspy
 	$('body').scrollspy({ target: '#active-page-nav' });
+
+	// initialized fixed header
+	fixedHeader.init();
 
 	/*
 	$('body').overlay({
