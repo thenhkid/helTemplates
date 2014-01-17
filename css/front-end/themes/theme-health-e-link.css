@@ -1,3 +1,7 @@
+.btn:focus,
+button:focus {
+  outline: 0;
+}
 *.unstyled-link {
   color: #666666;
 }
@@ -199,13 +203,7 @@ h3 {
 .primary-nav .navbar-nav li.open > a:hover,
 .primary-nav .navbar-nav li.active > a,
 .primary-nav .navbar-nav li > a:focus {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.primary-nav .navbar-nav li.open > a:hover,
-.primary-nav .navbar-nav li.open > a:hover:hover,
-.primary-nav .navbar-nav li.active > a:hover,
-.primary-nav .navbar-nav li > a:focus:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
 }
 .primary-nav .navbar-nav li > a {
   border-right: 0px solid rgba(217, 217, 217, 0.5);
@@ -222,6 +220,11 @@ h3 {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
+.primary-nav .navbar-nav li.active a:hover,
+.primary-nav .navbar-nav li.active a:active,
+.primary-nav .navbar-nav li.active a:focus {
+  background-color: #ffffff;
+}
 .primary-nav .navbar-nav li:first-child > a {
   border-left: 0;
 }
@@ -231,10 +234,13 @@ h3 {
 .primary-nav .navbar-nav .dropdown-menu {
   border: 0;
   border-top-left-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
 }
 .primary-nav .navbar-nav .dropdown-menu li {
   margin-right: 0;
+}
+.primary-nav .navbar-nav .dropdown-menu a:hover {
+  color: #333333;
 }
 .primary-nav .icon-bar {
   background-color: #000;
@@ -345,6 +351,7 @@ h3 {
   font-size: 16px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
+  line-height: 26px;
 }
 .content-inset {
   width: 200px;
@@ -376,7 +383,7 @@ h3 {
   background-color: #666;
 }
 .header {
-  background-image: url('../../../img/front-end/health-e-link/bg-header.jpg');
+  background-image: url('../../../img/front-end/health-e-link/bg-header-home.jpg');
 }
 .header-inner {
   background-image: url('../../../img/front-end/health-e-link/bg-page-title.png');

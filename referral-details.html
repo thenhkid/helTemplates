@@ -68,11 +68,13 @@
 							<li><a href="" title="Solutions">Solutions</a></li>
 							<li><a href="" title="Services">Services</a></li>
 							<li><a href="" title="Contact">Contact</a></li>
-							<li class="active"><a href="#" title="My Account" data-toggle="dropdown">My Account <b class="caret"></b></a>
+							<li><a href="#" title="My Account" data-toggle="dropdown">My Account <b class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="My account dropdown">
 									<li><a href="" title="Edit Account">Edit Account</a></li>
 									<li><a href="" title="Exchange">Exchange</a></li>
 									<li><a href="" title="eRG">eRG</a></li>
+									<li><a href="" title="eRG">Test</a></li>
+									<li><a href="" title="eRG">Test</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -81,30 +83,17 @@
 			</nav>
 			<!-- // End Primary Nav -->
 
-
-
 			<div class="container">
-				<h1 class="page-title"><span class="page-title-icon pull-left"></span>eRG</h1>
+				<h1 class="page-title"><span class="page-title-icon pull-left"></span>Health-e-Web</h1>
 			</div>
 
 
 			<nav class="navbar navbar-default actions-nav" role="navigation">
 				<div class="container">
 					<ul class="nav navbar-nav navbar-actions">
-						<li><a href="" title="Inbox" class="btn btn-link">
-							<span class="glyphicon glyphicon-inbox"></span>
-							<span class="nav-text">&nbsp; Inbox</span></a>
-							<span class="indicator-active arrow-up"></span>
-						</li>
-						<li><a href="" title="Sent" class="btn btn-link"><span class="glyphicon glyphicon-send"></span>
-							<span class="nav-text">&nbsp; Sent</span></a>
-							<span class="indicator-active arrow-up"></span>
-						</li>
-						<li><a href="" title="History" class="btn btn-link">
-							<span class="glyphicon glyphicon-time"></span>
-							<span class="nav-text">&nbsp; History</span></a>
-							<span class="indicator-active arrow-up"></span>
-						</li>
+						<li class="active"><a href="" title="Inbox" class="btn btn-link"><span class="glyphicon glyphicon-inbox"></span>&nbsp; Inbox <span class="badge" style="background-color:transparent; border:1px solid #fff">10</span></a><span class="indicator-active arrow-up"></span></li>
+						<li><a href="" title="Sent" class="btn btn-link"><span class="glyphicon glyphicon-send"></span>&nbsp; Sent</a><span class="indicator-active arrow-up"></span></li>
+						<li><a href="" title="History" class="btn btn-link"><span class="glyphicon glyphicon-time"></span>&nbsp; History</a><span class="indicator-active arrow-up"></span></li>
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right navbar-actions">
@@ -127,37 +116,38 @@
 
 			<ol class="breadcrumb">
 				<li><a href="#">My Account</a></li>
-				<li><a href="#">eRG</a></li>
-				<li class="active">Create New Referral</li>
+				<li><a href="#">Inbox</a></li>
+				<li class="active">Referral #97</li>
 			</ol>
 
-		<h2 class="form-title">Create New Referral</h2>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Wellness Program Referral</h2>
+						<dl>
+			<dd><strong>Date Received:</strong>1/06/2014 09:52PM</dd>
+			<dd><strong>System ID:</strong> 97</dd>
+			</dl>
+		</div>
+		<div class="col-md-6">
+		</div>
+	</div>
+		<div class="well">
+			<div class="row form-inline">
+				<div class="form-group col-sm-4">
+					<label class="sr-only">Referral Status</label>
+					<select class="form-control"><option>Referral Status</option></select>
+				</div>
+				<div class="form-group col-sm-4 col-sm-offset-4">
+					<label class="sr-only">Select Action</label>
+					<select class="form-control"><option>Select Action</option></select>
+				</div>
+			</div>
+		</div>
 		<form role="form" class="form">
-
-			<div class="panel-group form-accordion" id="accordion">
-
-			<div class="panel panel-default panel-form">
-				<div class="panel-heading">
-					<label>Type</label>
-					<select class="form-control"><option>Option One</option></select>
-				</div>
-			</div>
-
-			<div class="panel panel-default panel-form">
-				<div class="panel-heading">
-					<label>Recipient</label>
-					<select class="form-control"><option>Option One</option></select>
-				</div>
-			</div>
-
-			<div class="panel panel-default panel-form">
-				<div class="panel-heading">
-					<h3 class="accordion-toggle disabled" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Referral Details </h3>
-				</div>
 				<div id="collapseThree" class="panel-collapse collapse in">
-				<div class="panel-body">
+
 					<div class="form-section row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<h4 class="form-section-heading">Recipient Organization:</h4>
 							<dl class="vcard">
 								<dd class="fn">Nashua YMCA</dd>
@@ -168,7 +158,7 @@
 								<dd>phone: <span class="tel">603-541-5685</span></dd>
 							</dl>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<h4 class="form-section-heading">Referring Organization:</h4>
 							<dl class="vcard">
 								<dd class="fn">Nashua YMCA</dd>
@@ -363,8 +353,7 @@
 						<input type="submit" class="btn btn-primary btn-action" value="Send Referral"/>
 					</div>
 				</div>
-			</div>
-		</div>
+
 	</div>
 </div>
 </form>

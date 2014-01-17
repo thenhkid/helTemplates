@@ -277,11 +277,7 @@ h1,h2,h3 {
 
 		li {
 			&.open > a, &.open > a:hover, &.active > a, >a:focus {
-				background-color: @nav-active-background-color;
-
-				&:hover {
-					background-color: @nav-active-background-color;
-				}
+				background-color: @white;
 			}
 
 			> a {
@@ -290,7 +286,6 @@ h1,h2,h3 {
 
 				&:hover {
 					background-color: @nav-hover-background-color;
-
 					.caret {
 						border-top-color: @nav-text-color;
 						border-bottom-color: @nav-text-color;
@@ -301,6 +296,12 @@ h1,h2,h3 {
 			.caret {
 				border-top-color: @nav-text-color;
 				border-bottom-color: @nav-text-color;
+			}
+		}
+
+		li.active {
+			a:hover, a:active, a:focus {
+				background-color: @white;
 			}
 		}
 
@@ -316,10 +317,14 @@ h1,h2,h3 {
 		.dropdown-menu {
 			border:0;
 			border-top-left-radius:5px;
-			background-color: @nav-active-background-color;
+			background-color: @white;
 
 			li {
 				margin-right: 0;
+			}
+
+			a:hover {
+				color:@gray-dark;
 			}
 		}
 	}
@@ -470,6 +475,7 @@ h1,h2,h3 {
 		font-size: @font-size-medium;
 		font-family: @serif-font;
 		font-style: italic;
+		line-height: 26px;
 	}
 }
 
