@@ -701,6 +701,7 @@ html, body {
 	li.active .indicator-active {
 		display:block;
 	}
+
 }
 
 .icon-stacked {
@@ -738,6 +739,37 @@ html, body {
 	.badge {
 		padding:2px 5px;
 	}
+
+	@media (min-width: 0) and (max-width: @screen-xs-max) {
+
+		a {
+			text-align: left;
+		}
+
+		li.active .indicator-active {
+			display:none;
+		}
+
+	}
+
+	/* always float action nav items left;
+	// override default bootstrap styles;
+	@media (min-width: 0) and (max-width: @screen-xs-max) {
+		&.navbar-nav {
+			float:	left;
+		}
+		li {
+			float:	left;
+		}
+		li.active .indicator-active {
+			display:none;
+		}
+
+		&.navbar-right {
+			float:right;
+		}
+	}
+	*/
 }
 
 
