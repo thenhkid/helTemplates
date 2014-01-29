@@ -19,9 +19,9 @@ define(['jquery'], function ($) {
 
 		updateHeaderPosition : function () {
 
-			primaryNavHeight = primaryNav.outerHeight();
 
-			scrollPosition = $(this).scrollTop();
+			primaryNavHeight = primaryNav.outerHeight();
+			scrollPosition = $(window).scrollTop();
 
 			// if scroll top is greater than the header height, fix the position of primary nav and actions nav
 			if (scrollPosition > primaryNavHeight) {
@@ -90,7 +90,7 @@ define(['jquery'], function ($) {
 
 		init: function () {
 			var _self = this;
-			this.updateHeaderPosition();
+			_self.updateHeaderPosition();
 			$(window).on('scroll', _self.updateHeaderPosition);
 		}
 	};
