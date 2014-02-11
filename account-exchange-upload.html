@@ -106,17 +106,30 @@
 	<div class="container main-container" role="main">
 		<div class="row">
 			<div class="col-md-12 page-content">
-							<div class="" style="overflow:hidden; margin-bottom:10px;">
-								<a href="#uploadFile" title="Upload File" data-toggle="modal" class="pull-right btn btn-primary"><span class="glyphicon glyphicon-upload"></span> Upload File</a>
-								<form class="form form-inline">
-									<div class="form-group">
-										<label class="sr-only" for="search-configurations">Search</label>
-										<input type="text" class="form-control" id="search-configurations" placeholder="Search"/>
+							<div class="row" style="overflow:hidden; margin-bottom:10px;">
+
+								<div class="col-md-3">
+									<form class="form form-inline">
+										<div class="form-group">
+											<label class="sr-only" for="search-configurations">Search</label>
+											<input type="text" class="form-control" id="search-configurations" placeholder="Search"/>
+										</div>
+										<button class="btn btn-primary btn-sm">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</form>
+								</div>
+
+								<div class="col-md-2 col-md-offset-3">
+									<a href="#uploadFile" title="Upload File" data-toggle="modal" class="pull-right btn btn-primary"><span class="glyphicon glyphicon-upload"></span> Upload File</a>
+								</div>
+
+								<div class="col-md-4">
+									<div class="date-range-picker-trigger form-control pull-right">
+										<i class="glyphicon glyphicon-calendar"></i>
+										<span class="date-label">January 12, 2014 - February 11, 2014 (test)</span> <b class="caret"></b>
 									</div>
-									<button class="btn btn-primary btn-sm">
-										<span class="glyphicon glyphicon-search"></span>
-									</button>
-								</form>
+								</div>
 							</div>
 
 							<div class="form-container scrollable">
@@ -155,6 +168,35 @@
 												</a>
 											</td>
 										</tr>
+
+										<tr>
+											<td><a href="" title="">File</a></td>
+											<td>pdf</td>
+											<td>
+												<a href="" title="">1mb</a>
+
+												<span data-container="body" class="badge badge-help" data-placement="top" data-toggle="popover" data-content="This is the status">?</span>
+
+												<span class="badge badge-help"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">?</span>
+
+											</td>
+											<td>
+												8/20/2013
+											</td>
+											<td>
+												Weight loss
+											</td>
+											<td class="actions-col" style="width:200px;">
+												<a href="" class="btn btn-link">
+													<span class="glyphicon glyphicon-edit"></span>
+													View
+												</a>
+												<a href="" class="btn btn-link">
+													<span class="glyphicon glyphicon-remove"></span>
+													Delete
+												</a>
+											</td>
+										</tr>
 									</tbody>
 								</table>
 
@@ -167,8 +209,9 @@
 									<li><a href="#">5</a></li>
 									<li><a href="#">&raquo;</a></li>
 								</ul>
+							</div>
+					</div>
 			</div>
-		</div>
 
 
 			<div class="modal fade" id="uploadFile" role="dialog" tabindex="-1" aria-labeledby="Edit Crosswalks" aria-hidden="true" aria-describedby="Add, edit and delete crosswalks">
@@ -203,35 +246,35 @@
 			</div>
 	</div>
 
-<footer class="footer">
-	<div class="container">
-		<nav>
-			<ul class="nav-inline">
-				<li><a href="" title="">Home</a></li>
-				<li><a href="" title="">About</a></li>
-				<li><a href="" title="">Product Suite</a></li>
-				<li><a href="" title="">Solutions</a></li>
-				<li><a href="" title="">Contact</a></li>
-				<li><a href="" title="">Partners</a></li>
-				<li><a href="" title="">My Account</a></li>
-				<li><a href="" title="">Site Map</a></li>
-				<li><a href="" title="">Privacy</a></li>
-			</ul>
-		</nav>
+	<footer class="footer">
+		<div class="container">
+			<nav>
+				<ul class="nav-inline">
+					<li><a href="" title="">Home</a></li>
+					<li><a href="" title="">About</a></li>
+					<li><a href="" title="">Product Suite</a></li>
+					<li><a href="" title="">Solutions</a></li>
+					<li><a href="" title="">Contact</a></li>
+					<li><a href="" title="">Partners</a></li>
+					<li><a href="" title="">My Account</a></li>
+					<li><a href="" title="">Site Map</a></li>
+					<li><a href="" title="">Privacy</a></li>
+				</ul>
+			</nav>
 
-		<p class="vcard">
-			<span class="fn">BOWlink Technologies, Inc</span> |
-			<span class="adr"><span class="post-office-box">P.O. Box 275</span>,
-			<span class="region">Auburn, MA</span>
-			<span class="postal-code">01501</span></span> |
-			Phone: <span class="tel">(508) 721-1977</span> |
-			<a class="email" href="mailto:info@health-e-link.net">mailto:info@health-e-link.net</a>
-		</p>
-		<p>
-		Copyright 2013 BOWlink Technologies Inc. All rights reserved</p>
-		</p>
-	</div>
-</footer>
+			<p class="vcard">
+				<span class="fn">BOWlink Technologies, Inc</span> |
+				<span class="adr"><span class="post-office-box">P.O. Box 275</span>,
+				<span class="region">Auburn, MA</span>
+				<span class="postal-code">01501</span></span> |
+				Phone: <span class="tel">(508) 721-1977</span> |
+				<a class="email" href="mailto:info@health-e-link.net">mailto:info@health-e-link.net</a>
+			</p>
+			<p>
+			Copyright 2013 BOWlink Technologies Inc. All rights reserved</p>
+			</p>
+		</div>
+	</footer>
 
 
 </div>

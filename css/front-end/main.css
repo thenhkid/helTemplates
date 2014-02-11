@@ -1,4 +1,5 @@
 @import '../../css/responsive-tables.css';
+@import '../../css/daterangepicker-bs3.css';
 /*!
  * Bootstrap v3.0.0
  *
@@ -5939,6 +5940,10 @@ td.visible-print {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.date-range-picker-trigger .date-label {
+  margin: 0 10px;
+  display: inline-block;
 }
 .contain {
   max-width: 1170px;
