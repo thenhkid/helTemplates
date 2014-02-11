@@ -1,4 +1,5 @@
 @import '../../css/responsive-tables.css';
+@import '../../css/daterangepicker-bs3.css';
 /*!
  * Bootstrap v3.0.0
  *
@@ -5940,6 +5941,10 @@ td.visible-print {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.date-range-picker-trigger .date-label {
+  margin: 0 10px;
+  display: inline-block;
+}
 .contain {
   max-width: 1170px;
   margin: auto;
@@ -5989,6 +5994,16 @@ td.visible-print {
 .product-suite .icon-product {
   margin-right: 20px;
 }
+@media (max-width: 767px) {
+  .product-suite .product-demo {
+    padding-bottom: 20px;
+    display: none;
+    display: block;
+    color: #fff;
+    border-top: 1px solid #193c57;
+    padding-top: 20px;
+  }
+}
 .home .product-suite .icon-product {
   margin: auto;
 }
@@ -6027,9 +6042,6 @@ td.visible-print {
 .product-suite-header h2 {
   margin: 0;
   white-space: nowrap;
-}
-.product-suite-header .product-demo {
-  margin-top: 5px;
 }
 .modal-media.image-modal .modal-dialog {
   min-width: 0;
@@ -6169,10 +6181,26 @@ td.visible-print {
   margin-left: -15px;
 }
 @media (max-width: 767px) {
+  .central-graphic {
+    height: auto;
+  }
   .central-graphic .image-a,
   .central-graphic .image-b,
   .central-graphic .image-c {
     display: none;
+  }
+  .central-graphic h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 0;
+  }
+  .central-graphic h1 small {
+    font-size: 24px;
+  }
+  .central-graphic .central-graphic-content {
+    position: relative;
+    bottom: auto;
+    padding-bottom: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6353,6 +6381,8 @@ td.visible-print {
   margin-bottom: 0;
   border-radius: 0;
   padding: 15px 0;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .primary-nav .container .navbar-header,
 .primary-nav .container .navbar-brand {
@@ -6360,8 +6390,8 @@ td.visible-print {
   margin-right: 0;
 }
 .primary-nav.fixed {
-  background-color: #fff;
   border-bottom: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   top: 0;
   left: 0;
@@ -6446,6 +6476,8 @@ td.visible-print {
   margin-bottom: 0;
 }
 .actions-nav {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
   margin-bottom: 0px;
 }
 .actions-nav .navbar-brand {
@@ -6453,7 +6485,7 @@ td.visible-print {
   padding-bottom: 22px;
 }
 .actions-nav.fixed {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   left: 0;
   position: fixed !important;

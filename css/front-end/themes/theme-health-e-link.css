@@ -2,6 +2,9 @@
 button:focus {
   outline: 0;
 }
+.date-range-picker-trigger {
+  cursor: pointer;
+}
 *.unstyled-link {
   color: #666666;
 }
@@ -394,6 +397,11 @@ h3 {
 .home .header {
   height: 609px;
   background-image: url('../../../img/front-end/health-e-link/bg-header-home.jpg');
+}
+@media (max-width: 767px) {
+  .home .header {
+    height: auto;
+  }
 }
 .home .header-inner {
   height: 100%;
