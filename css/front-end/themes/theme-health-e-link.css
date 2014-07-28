@@ -395,8 +395,8 @@ h3 {
   background-color: transparent;
 }
 .home .header {
-  height: 609px;
   background-image: url('../../../img/front-end/health-e-link/bg-header-home.jpg');
+  background-size: auto 100%;
 }
 @media (max-width: 767px) {
   .home .header {
@@ -406,7 +406,7 @@ h3 {
 .home .header-inner {
   height: 100%;
   background-image: url('../../../img/front-end/health-e-link/bg-home-central-graphic.png');
-  background-position: center bottom;
+  background-position: center 312px;
   background-repeat: no-repeat;
 }
 .central-graphic h1,
@@ -421,6 +421,40 @@ h3 {
   background-image: url('../../../img/front-end/health-e-link/sp-health-e-link.png');
   background-repeat: no-repeat;
   background-position: 0 -220px;
+}
+.news-ticker {
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid #fff;
+}
+.news-ticker .container {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 10px;
+}
+.news-ticker .news-ticker-content {
+  border-left: 1px solid #ccc;
+}
+.news-ticker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.news-ticker ul li p:last-child {
+  margin-bottom: 0;
+}
+.news-ticker h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #003366;
+}
+.news-ticker h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .product-suite {
   background-color: #1b2e3e;
