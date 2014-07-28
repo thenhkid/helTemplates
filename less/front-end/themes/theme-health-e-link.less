@@ -37,17 +37,17 @@
 // page specific
 .home {
 	.header {
-		height:609px;
 		background-image: url('../../../img/front-end/health-e-link/bg-header-home.jpg');
 		@media (max-width: @screen-xs-max) {
 			height: auto;
 		}
+		background-size: auto 100%;
 	}
 
 	.header-inner {
 		height: 100%;
 		background-image: url('../../../img/front-end/health-e-link/bg-home-central-graphic.png');
-		background-position: center bottom;
+		background-position: center 312px;
 		background-repeat: no-repeat;
 	}
 }
@@ -67,6 +67,50 @@
 .page-title-icon {
 	.sprite-health-e-link(0, -220px);
 }
+
+// news ticker
+.news-ticker {
+	padding:15px 0;
+	background-color: rgba(255,255,255,.5);
+	border-top:1px solid #fff;
+
+	.container {
+		background-color: rgba(255,255,255,.75);
+		padding:20px;
+		border-radius: 10px;
+	}
+
+	.news-ticker-content {
+		border-left:1px solid #ccc;
+	}
+
+
+	ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+
+		li p:last-child{
+			margin-bottom:0;
+		}
+	}
+
+	h2 {
+		font-size:18px;
+		font-weight: bold;
+		margin-bottom: 5px;
+		margin-top:0;
+		text-transform: uppercase;
+		color:@brand-secondary;
+	}
+
+	h3 {
+		font-size: 16px;
+		margin-top:0;
+		margin-bottom: 5px;
+	}
+}
+
 
 // product suite
 .product-suite {
