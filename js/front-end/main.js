@@ -93,6 +93,8 @@ require(['jquery', 'fixed-header', 'moment', 'bootstrap', 'responsive-tables', '
 	);
 
 
+	$('.news-carousel').carousel();
+
 
 	// left nav scrollspy
 	$('body').scrollspy({ target: '#active-page-nav' });
